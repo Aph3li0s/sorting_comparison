@@ -1,6 +1,8 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 #include <fstream>
 #include <chrono>
+#include <string>
 using namespace std;
 using namespace std::chrono;
 double arr[1000000];
