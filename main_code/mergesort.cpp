@@ -58,7 +58,7 @@ void mergeSort(double array[], int const begin, int const end)
 
 int main()
 {   
-    int t = 9;
+    int t = 10;
 	while (t--){
 		//"../datasets/data10.txt"
 		int a = 10 - t;
@@ -71,11 +71,11 @@ int main()
 			}
 			file.close();
 		} else cout << "Unable to open file" << endl;
-		
+
 		auto start = std::chrono::high_resolution_clock::now();
 		mergeSort(arr, 0, n - 1);
 		auto end = std::chrono::high_resolution_clock::now();
 		cout << "Time taken datasets " + to_string(a)  << ": " << std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count() << "ms\n";
 	}
-	return 0;
+    return 0;
 }
