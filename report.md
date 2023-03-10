@@ -1,4 +1,13 @@
 # Báo cáo thực nghiệm
+
+Họ và tên: Phan Huỳnh Ngọc Trâm
+
+MSSV: 22521500
+
+Mail: 22521500@gm.uit.edu.vn
+
+Link Github báo cáo: https://github.com/Aph3li0s/sorting_comparison
+
 ## I. Mở đầu
 **Lí do cần phải đánh giá các thuật toán sắp xếp:**
 * Mỗi thuật toán có cách hoạt động khác nhau. Vì thế, chúng sẽ chạy tốt trong các trường hợp lí tưởng và ngược lại
