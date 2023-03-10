@@ -18,7 +18,7 @@ def dec():
         
         
 for i in range (10):
-    f = open("./datasets/data" + str(i+1) + ".txt", "a")
+    f = open("../datasets/data" + str(i+1) + ".txt", "a")
     f.truncate(0)
     random.seed(time.time())
     if (i == 0):
