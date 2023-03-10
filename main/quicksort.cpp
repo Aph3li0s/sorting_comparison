@@ -4,7 +4,6 @@
 #include <chrono>
 #include <string>
 using namespace std;
-using namespace std::chrono;
 double arr[1000000];
 
 int partition(double arr[], int low, int high) {
@@ -37,29 +36,25 @@ void quicksort(double arr[], int low, int high) {
     }
 }
 
-int main() {
+signed main() {
+	
     int t = 10;
 	while (t--){
-		//"../datasets/data10.txt"
 		int a = 10 - t;
 		string name_f = "../datasets/data" + to_string(a) + ".txt";
-		long long i = 0;
-		double num;
 		int n = sizeof(arr) / sizeof(arr[0]);
 		ifstream file(name_f);
 		if (file.is_open()) { 
-			while (file >> num) {
-				arr[i] = num;
-				i++;
+			for (int i = 0; i < 1000000; i++){
+				file >> arr[i];
 			}
 			file.close();
 		} else cout << "Unable to open file" << endl;
-		auto start = high_resolution_clock::now();
+		auto start = std::chrono::high_resolution_clock::now();
 		quicksort(arr, 0, n - 1);
-		auto end = high_resolution_clock::now();
-		cout << "Time taken datasets " + to_string(a)  << ": " << duration_cast<milliseconds>(end - start).count() << "ms\n";
-		
-		// for (int i = 0; i < 100; i++) cout << arr[i] << " ";
+		auto end = std::chrono::high_resolution_clock::now();
+		cout << "Time taken datasets " + to_string(a)  << ": " << std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count() << "ms\n";
+		for (int i = 0; i < 10; i++) cout << arr[i] << " ";
+        cout << endl;
 	}
-	return 0;
 }

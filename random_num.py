@@ -2,7 +2,7 @@ import random
 import time
 prev_num = 0
 def inc():
-    prev_num = random.uniform(0, 20)
+    prev_num = random.uniform(0, 10)
     for i in range(1000000):
         new_num = prev_num + random.uniform(1, 10)
         f.write(str(round(new_num, 3)))
@@ -27,7 +27,7 @@ for i in range (10):
         dec()
     else:
         for i in range(1000000):
-            num = random.uniform(0, 100000000) 
+            num = random.uniform(0, 1000000) 
             f.write(str(round(num, 3)))
             f.write(" ")
                

@@ -36,14 +36,11 @@ int main(){
 		//"../datasets/data10.txt"
 		int a = 10 - t;
 		string name_f = "../datasets/data" + to_string(a) + ".txt";
-		long long i = 0;
-		double num;
 		int n = sizeof(arr) / sizeof(arr[0]);
 		ifstream file(name_f);
 		if (file.is_open()) { 
-			while (file >> num) {
-				arr[i] = num;
-				i++;
+			for (int i = 0; i < 1000000; i++){
+				file >> arr[i];
 			}
 			file.close();
 		} else cout << "Unable to open file" << endl;
