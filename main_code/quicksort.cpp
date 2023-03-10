@@ -54,7 +54,6 @@ signed main() {
 		quicksort(arr, 0, n - 1);
 		auto end = std::chrono::high_resolution_clock::now();
 		cout << "Time taken datasets " + to_string(a)  << ": " << std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count() << "ms\n";
-		for (int i = 0; i < 10; i++) cout << arr[i] << " ";
-        cout << endl;
 	}
+    return 0;
 }

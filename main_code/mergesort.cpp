@@ -72,7 +72,6 @@ int main()
 			file.close();
 		} else cout << "Unable to open file" << endl;
 		
-		// for (int i = 0; i < 100; i++) cout << arr[i] << " ";
 		auto start = std::chrono::high_resolution_clock::now();
 		mergeSort(arr, 0, n - 1);
 		auto end = std::chrono::high_resolution_clock::now();

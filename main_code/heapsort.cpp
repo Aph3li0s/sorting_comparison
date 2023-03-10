@@ -44,7 +44,7 @@ int main(){
 			}
 			file.close();
 		} else cout << "Unable to open file" << endl;
-		// for (int i = 0; i < 100; i++) cout << arr[i] << " ";
+
 		auto start = high_resolution_clock::now();
 		heapSort(arr, n);
 		auto end = high_resolution_clock::now();
