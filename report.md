@@ -239,6 +239,7 @@ Nhìn chung, các thuật toán đều xử lí rất nhanh chóng với thời 
 * Trái ngược với Mergesort, Heapsort tỏ ra hiệu quả hơn khi chạy với số lượng đầu vào thấp với thời gian thực thi dưới 50ms
 
 *Kết quả sau khi thử nghiệm với 1000 input trong mỗi bộ data:*
+
 ![](https://i.imgur.com/zAvZCgy.png)
 
 
